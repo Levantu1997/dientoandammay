@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="images/favicon.png">
+      <title>Welcome to AATSHOP</title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,100italic,100' rel='stylesheet' type='text/css'>
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
+      <link href="css/sequence-looptheme.css" rel="stylesheet" media="all"/>
+      <link href="css/style.css" rel="stylesheet">
+      <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script><![endif]-->
+</head>
+<body id="home">
+    <div class="wrapper">
+      <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="js/jquery.sequence-min.js"></script>
+	  <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	  <script defer src="js/jquery.flexslider.js"></script>
+	  <script type="text/javascript" src="js/script.min.js" ></script>
+    <header>
+        <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                     <div class="logo"><a href="Default.aspx"><img src="images/log.png" width="100" height="100" alt="AATSHOP"></a></div>
+                  </div>
+                  <div class="col-md-10 col-sm-10">
+                     <div class="header_top">
+                        <div class="row">
+                           <div class="col-md-3">
+                              <ul class="option_nav">
+                                 <li class="dorpdown">
+                                    <a href="#">VN</a>
+                                    <ul class="subnav">
+                                            <li><a href="#">VN</a></li>
+                                       <li><a href="#">Eng</a></li>
+                                   
+                                      
+                                    </ul>
+                                 </li>
+                                 <li class="dorpdown">
+                                    <a href="#">VND</a>
+                                    <ul class="subnav">
+                                       <li><a href="#">VND</a></li>
+                                       <li><a href="#">USD</a></li>
+                                   
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="col-md-6">
+                              <ul class="topmenu">
+                                 <li><a href="#">Liên hệ</a></li>
+                                 <li><a href="#">Tin tức</a></li>
+                                 <li><a href="#">Dịch vụ</a></li>
+                                 <li><a href="#">Tuyển dụng</a></li>
+                                 <li><a href="#">Truyền thông</a></li>
+                                 <li><a href="#">Hỗ trợ</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-md-3">
+                              <ul class="usermenu">
+                                 <li><a href="checkout.html" class="log">Đăng nhập</a></li>
+                                 <li><a href="checkout2.html" class="reg">Đăng kí</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="clearfix"></div>
+                     <div class="header_bottom">
+                        <ul class="option">
+                           <li id="search" class="search">
+                              <form><input class="search-submit" type="submit" value=""><input class="search-input" placeholder="Enter your search term..." type="text" value="" name="search"></form>
+                           </li>
+                           <li class="option-cart">
+                              <a href="#" class="cart-icon">Giỏ hàng <span class="cart_no">02</span></a>
+                              <ul class="option-cart-item">
+                                 <li>
+                                    <div class="cart-item">
+                                       <div class="image"><img src="images/products/thum/6white.png" alt=""></div>
+                                       <div class="item-description">
+                                          <p class="name">Iphone 6 White 16gb</p>
+                                          <p>Size: <span class="light-red">One</span><br>Quantity: <span class="light-red">01</span></p>
+                                       </div>
+                                       <div class="right">
+                                          <p class="price">$451.00</p>
+                                          <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="cart-item">
+                                       <div class="image"><img src="images/products/thum/ip7plus.png" alt=""></div>
+                                       <div class="item-description">
+                                          <p class="name">Iphone 7 Plus Jet Black 128GB</p>
+                                          <p>Size: <span class="light-red">One </span><br>Quantity: <span class="light-red">01</span></p>
+                                       </div>
+                                       <div class="right">
+                                          <p class="price">$800.00</p>
+                                          <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li><span class="total">Total <strong>$1251.00</strong></span><button class="checkout" onClick="location.href='checkout.html'">CheckOut</button></li>
+                              </ul>
+                           </li>
+                        </ul>
+                        <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                        <div class="navbar-collapse collapse">
+                           <ul class="nav navbar-nav">
+                              <li class="active dropdown">
+                                 <a href="Default.aspx" class="dropdown-toggle" data-toggle="dropdown">Trang chủ</a>
+                                 <div class="dropdown-menu">
+                                    <ul class="mega-menu-links">
+                                    
+                                       <li><a href="Sanpham.aspx">Sản Phẩm</a></li>
+                                       <li><a href="Loaisp.aspx">Loại Sản Phẩm</a></li>
+                                       <li><a href="Hoadon.aspx">Hóa Đơn</a></li>
+                                       <li><a href="Chitiethd.aspx">Chi Tiết</a></li>
+                                       <li><a href="About.aspx">Khách Hàng</a></li>
+                                       <li><a href="Contact.aspx">Liên hệ</a></li>
+                                    </ul>
+                                 </div>
+                              </li>
+                              
+                             
+                              </li>
+                              <li><a href="Sanpham.aspx">Sản Phẩm</a></li>
+                              <li><a href="Loaisp.aspx">Loại Sản Phẩm</a></li>
+                              <li><a href="Hoadon.aspx">Hóa Đơn</a></li>
+                              <li><a href="Chitiethd.aspx">Chi Tiết</a></li>
+                              <li><a href="About.aspx">Khách Hàng</a></li>
+                              <li><a href="Contact.aspx">Liên hệ</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </header>
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-info">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-3">
+                        <div class="footer-logo"><a href="#"><img src="images/log.png" width="100" height="100"alt=""></a></div>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <h4 class="title">Liên hệ <strong>Thông tin</strong></h4>
+                        <p>H Building,Ham Nghi Street. Hanoi , Vietnam</p>
+                        <p>Gọi : 0973090977</p>
+                        <p>Email : anhndtph05627@fpt.edu.vn</p>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <h4 class="title">Hỗ trợ <strong>Khách hàng</strong></h4>
+                        <ul class="support">
+                           <li><a href="#">Câu hỏi thường gặp</a></li>
+                           <li><a href="#">Phương thức thanh toán</a></li>
+                          
+                           <li><a href="#">Thông tin </a></li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3">
+                        <h4 class="title">Nhận thông báo <strong>từ chúng tôi </strong></h4>
+                        <p>Cập nhật những tin mới nhất</p>
+                        <form class="newsletter">
+							<input type="text" name="" placeholder="Nhập vào email....">
+							<input type="submit" value="Gửi" class="button">
+						</form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright-info">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p>Copyright © 2012. Designed by AAT <p></p><a href="#">Yanbi</a>. All rights reseved</p>
+                     </div>
+                     <div class="col-md-6">
+                        <ul class="social-icon">
+                           <li><a href="#" class="linkedin"></a></li>
+                           <li><a href="#" class="google-plus"></a></li>
+                           <li><a href="#" class="twitter"></a></li>
+                           <li><a href="#" class="facebook"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </footer>
+        </div>
+</body>
+</html>
