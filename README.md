@@ -1,2 +1,0 @@
-# dientoandammay
-bảo vệ môn
