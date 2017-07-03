@@ -7,7 +7,7 @@
     <div class="container_fullwidth">
         <div class="container">
           <div class="nen">
-              <asp:FormView ID="FormView1" runat="server" DataKeyNames="Ma" DataSourceID="SqlDataSource1">
+              <asp:FormView ID="FormView1" runat="server" DataKeyNames="Ma" DataSourceID="SqlDataSource1" AllowPaging="True">
                   <EditItemTemplate>
                       Ma:
                       <asp:Label ID="MaLabel1" runat="server" Text='<%# Eval("Ma") %>' />
