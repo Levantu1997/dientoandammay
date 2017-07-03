@@ -7,7 +7,6 @@
     <div class="container_fullwidth">
         <div class="container">
           <div class="nen">
-              mr.t
               <asp:FormView ID="FormView1" runat="server" AllowPaging="True" DataKeyNames="Ma" DataSourceID="SqlDataSource2">
                   <EditItemTemplate>
                       Ma:
